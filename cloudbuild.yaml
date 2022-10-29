@@ -12,7 +12,6 @@ steps:
       [
         'push',
         'gcr.io/rackspace/austinjones-ops-f71d:$SHORT_SHA',
-        '.',
       ]
   - name: 'gcr.io/cloud-builders/gcloud'
     args:
