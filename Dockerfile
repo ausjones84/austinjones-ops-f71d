@@ -1,6 +1,7 @@
 # TODO
 FROM node:17-alpine as dependencies
 WORKDIR /app
+ADD . /app
 COPY package.json .
 RUN npm i
 COPY . . 
