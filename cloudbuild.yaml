@@ -5,12 +5,12 @@ steps:
         'build',
         '-t',
         'gcr.io/rackspace/austinjones-ops-f71d:$SHORT_SHA',
-        '.',
+        '.'
       ]
   - name: 'gcr.io/cloud-builders/docker'
     args:
       [
         'push',
-        'gcr.io/rackspace/austinjones-ops-f71d:$SHORT_SHA',
+        'gcr.io/rackspace/austinjones-ops-f71d:$SHORT_SHA'
       ]
 
