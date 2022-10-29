@@ -1,11 +1,7 @@
-# TODO
-FROM node:17-alpine as dependencies
+FROM node:13-slim
+
 WORKDIR /app
+
 ADD . /app
-COPY package.json .
-RUN npm i
-COPY . . 
-# Build production image
-FROM dependencies as builder
-EXPOSE 3000
-CMD npm run start
+
+CMD node app.js
